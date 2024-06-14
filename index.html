@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="img/music.png" id="musicButton" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+    <audio class="song" preload autoplay loop>
+        <source src="music.mp3" type="audio/mp3"> </source>
+    </audio>
+
+    <div class="balloons text-center" id="b1">
+    	<!-- <h2 style="color:#F2B300;">B</h2> -->
+    </div>
+    <div class="balloons text-center" id="b2" style="z-index: 100;">
+    	<!-- <h2 style="color:#0719D4;">i</h2> -->
+    </div>
+	<div class="balloons text-center" id="b3" style="z-index: 100;">
+    	<!-- <h2 style="color:#D14D39;">r</h2> -->
+    </div>
+	<div class="balloons text-center" id="b4" style="z-index: 100;">
+    	<!-- <h2 style="color:#8FAD00;">t</h2> -->
+    </div>
+	<div class="balloons text-center" id="b5" style="z-index: 100;">
+    	<!-- <h2 style="color:#8377E4;">h</h2> -->
+    </div>
+    <div class="balloons text-center" id="b6" style="z-index: 100;">
+    	<!-- <h2 style="color:#99C96A;">d</h2> -->
+    </div>
+    <div class="balloons text-center" id="b7" style="z-index: 100;">
+    	<!-- <h2 style="color:#20CFB4;">a</h2> -->
+    </div>
+    <div class="balloons text-center" id="b8" style="z-index: 100;">
+    	<!-- <h2 style="color:#8377E4;">y</h2> -->
+    </div>
+    
+ 
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">糖&nbsp;&nbsp;宝</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2 hidden>♡ 生日快乐呀 ♡</h2>
+                            <h2 hidden>♡ 朝暮与年岁共往 ♡</h2>
+                            <h2 hidden>♡ 然后与你一同行至天光 ♡</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake">
+                    <img src="img/cake.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" style="z-index: 1000;" class="balloon-border" >
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/effect.js"></script>
+
+</html>
